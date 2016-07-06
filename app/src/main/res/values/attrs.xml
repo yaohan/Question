@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="theme_green" format="color"/>
+    <attr name="title_pressed" format="color"/>
+
+    <attr name="background_white" format="color"/>
+    <attr name="divide_gray" format="color"/>
+    <attr name="item_white_pressed" format="color"/>
+    <attr name="item_homework_blue" format="color"/>
+    <attr name="font_white" format="color"/>
+    <attr name="font_black" format="color"/>
+    <attr name="font_green" format="color"/>
+    <attr name="font_gray" format="color"/>
+
+    <attr name="rightPadding" format="dimension" />
+    <attr name="fontPath" format="string"/>
+
+</resources>

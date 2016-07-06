@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/touch_view_48"
+    android:minHeight="@dimen/touch_view_48"
+    android:paddingLeft="@dimen/margin_space_16"
+    android:paddingRight="@dimen/margin_space_16">
+
+    <TextView
+        android:id="@+id/item_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:text="10:00"
+        android:textColor="?attr/font_gray"
+        android:textSize="@dimen/font_size_normal"/>
+
+    <RelativeLayout
+        android:layout_toRightOf="@+id/item_left"
+        android:layout_marginLeft="@dimen/margin_space_16"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="?attr/item_homework_blue">
+
+        <TextView
+            android:id="@+id/item_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/margin_space__16"
+            android:text="11月16日作业"
+            android:textColor="?attr/font_white"
+            android:textSize="@dimen/font_size_menu" />
+
+        <ImageView
+            android:id="@+id/item_right_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/homework_finish"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_space_16"/>
+
+        <TextView
+            android:id="@+id/item_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="@dimen/margin_space__16"
+            android:text="未完成"
+            android:textColor="?attr/font_white"
+            android:textSize="@dimen/font_size_normal" />
+    </RelativeLayout>
+</RelativeLayout>

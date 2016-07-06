@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/main_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_toolbar" />
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:id="@+id/rl_head"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/touch_view_48">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="头像"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="@dimen/margin_space_16"/>
+
+                    <com.ssdut411.app.questionanswer.widget.CircularImage
+                        android:id="@+id/iv_info_head"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/margin_space_16"
+                        android:src="@mipmap/role_student"
+                        android:layout_centerVertical="true"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/rl_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/touch_view_48">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="@dimen/margin_space_16"
+                        android:text="真实姓名" />
+
+                    <TextView
+                        android:id="@+id/tv_info_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingRight="@dimen/margin_space_16"
+                        android:layout_alignParentRight="true"/>
+                    <include layout="@layout/divide_gray_horizontal"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_gender"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/touch_view_48">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="@dimen/margin_space_16"
+                        android:text="性别" />
+
+                    <TextView
+                        android:id="@+id/tv_info_gender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingRight="@dimen/margin_space_16"
+                        android:layout_alignParentRight="true" />
+                    <include layout="@layout/divide_gray_horizontal"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_age"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/touch_view_48">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="@dimen/margin_space_16"
+                        android:text="年龄" />
+
+                    <TextView
+                        android:id="@+id/tv_info_age"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingRight="@dimen/margin_space_16"
+                        android:layout_alignParentRight="true"/>
+                    <include layout="@layout/divide_gray_horizontal"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_school"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/touch_view_48">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/margin_space_16"
+                        android:layout_centerVertical="true"
+                        android:text="学校" />
+
+                    <TextView
+                        android:id="@+id/tv_info_school"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingRight="@dimen/margin_space_16"
+                        android:layout_alignParentRight="true" />
+                    <include layout="@layout/divide_gray_horizontal"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_class"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/touch_view_48">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="@dimen/margin_space_16"
+                        android:text="班级" />
+
+                    <TextView
+                        android:id="@+id/tv_info_class"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingRight="@dimen/margin_space_16"
+                        android:layout_alignParentRight="true" />
+                    <include layout="@layout/divide_gray_horizontal"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_info_parent"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/touch_view_48">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="@dimen/margin_space_16"
+                        android:text="家长" />
+
+                    <TextView
+                        android:id="@+id/tv_info_parent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingRight="@dimen/margin_space_16"
+                        android:layout_alignParentRight="true"/>
+                    <include layout="@layout/divide_gray_horizontal"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_info_child"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/touch_view_48">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="@dimen/margin_space_16"
+                        android:text="孩子" />
+
+                    <TextView
+                        android:id="@+id/tv_info_child"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingRight="@dimen/margin_space_16"
+                        android:layout_alignParentRight="true" />
+                    <include layout="@layout/divide_gray_horizontal"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/rl_info_subject"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/touch_view_48">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="@dimen/margin_space_16"
+                        android:text="科目" />
+
+                    <TextView
+                        android:id="@+id/tv_info_subject"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingRight="@dimen/margin_space_16"
+                        android:layout_alignParentRight="true" />
+                    <include layout="@layout/divide_gray_horizontal"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_address"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/touch_view_48">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="@dimen/margin_space_16"
+                        android:text="家庭地址" />
+
+                    <TextView
+                        android:id="@+id/tv_info_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingRight="@dimen/margin_space_16"
+                        android:layout_alignParentRight="true"/>
+                    <include layout="@layout/divide_gray_horizontal"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_contact"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/touch_view_48">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="@dimen/margin_space_16"
+                        android:text="联系方式" />
+
+                    <TextView
+                        android:id="@+id/tv_info_contact"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingRight="@dimen/margin_space_16"
+                        android:layout_alignParentRight="true"/>
+                    <include layout="@layout/divide_gray_horizontal"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_set_role"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/touch_view_48"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:layout_below="@+id/main_layout"
+        android:gravity="center"
+        android:text="设为家长"
+        android:textColor="@color/font_white"
+        android:textSize="@dimen/font_size_menu" />
+</LinearLayout>

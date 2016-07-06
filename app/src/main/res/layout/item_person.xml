@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/touch_view_48"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/margin_space_16"
+        android:layout_marginRight="@dimen/margin_space_16">
+        <com.ssdut411.app.questionanswer.widget.CircularImage
+            android:id="@+id/iv_person_head"
+            android:layout_width="@dimen/touch_head_40"
+            android:layout_height="@dimen/touch_head_40"
+            android:src="@mipmap/role_student"/>
+        <TextView
+            android:id="@+id/tv_person_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_space_16"/>
+        <TextView
+            android:id="@+id/tv_person_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_space_16"/>
+        <TextView
+            android:id="@+id/tv_person_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_space_16"/>
+        <TextView
+            android:id="@+id/tv_person_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_space_16"
+            android:singleLine="true"/>
+    </LinearLayout>
+</LinearLayout>

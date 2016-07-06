@@ -1,0 +1,61 @@
+<resources>
+
+    <style name="DayTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- toolbar（actionbar）颜色 -->
+        <item name="colorPrimary">@color/theme_green</item>
+        <!-- 状态栏颜色 -->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <!-- 标题颜色 -->
+        <item name="android:textColorPrimary">@color/font_white</item>
+        <!-- 窗口的背景颜色 -->
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:actionMenuTextColor">@android:color/white</item>
+
+        <item name="theme_green">@color/theme_green</item>
+        <item name="title_pressed">@color/title_pressed</item>
+
+        <item name="background_white">@color/background_white</item>
+        <item name="divide_gray">@color/divide_gray</item>
+        <item name="item_white_pressed">@color/item_white_pressed</item>
+
+        <item name="font_white">@color/font_white</item>
+        <item name="font_gray">@color/font_gray</item>
+        <item name="font_black">@color/font_black</item>
+        <item name="font_green">@color/theme_green</item>
+        <item name="item_homework_blue">@color/item_homework_blue</item>
+    </style>
+
+    <style name="NightTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- toolbar（actionbar）颜色 -->
+        <item name="colorPrimary">@color/theme_night</item>
+        <!-- 状态栏颜色 -->
+        <item name="colorPrimaryDark">@color/theme_night_pressed</item>
+        <!-- 标题颜色 -->
+        <item name="android:textColorPrimary">?attr/font_white</item>
+        <!-- 窗口的背景颜色 -->
+        <item name="android:windowBackground">?attr/background_white</item>
+        <item name="android:actionMenuTextColor">?attr/font_white</item>
+
+        <item name="theme_green">@color/theme_night</item>
+        <item name="title_pressed">@color/theme_night_pressed</item>
+
+        <item name="background_white">@color/background_night</item>
+        <item name="divide_gray">@color/divide_gray</item>
+        <item name="item_white_pressed">@color/font_night</item>
+
+        <item name="font_white">@color/font_night</item>
+        <item name="font_gray">@color/font_night</item>
+        <item name="font_black">@color/font_night</item>
+        <item name="font_green">@color/theme_green</item>
+        <item name="item_homework_blue">@color/theme_night</item>
+    </style>
+    <style name="Dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+</resources>

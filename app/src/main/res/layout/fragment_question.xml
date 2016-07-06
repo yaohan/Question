@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tv_fragment_stem"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/theme_green"
+            android:paddingLeft="@dimen/margin_space_32"
+            android:paddingRight="@dimen/margin_space_32"
+            android:paddingBottom="@dimen/margin_content_72"
+            android:paddingTop="@dimen/margin_space_16"
+            android:text="把3千克巧克力糖平分给4个小朋友"
+            android:textColor="?attr/font_white"
+            android:textSize="@dimen/font_size_menu" />
+
+        <LinearLayout
+            android:id="@+id/ll_fragment_options"
+            android:layout_below="@+id/tv_fragment_stem"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-56dp"
+            android:background="@mipmap/options_box"
+            android:paddingTop="@dimen/margin_space_32"
+            android:paddingBottom="@dimen/margin_space_32">
+
+            <com.ssdut411.app.questionanswer.widget.ListViewForScrollView
+                android:id="@+id/lv_fragment_options"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="@dimen/view_space_8" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_fragment_analytical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/ll_fragment_options"
+            android:layout_marginTop="@dimen/view_space_8"
+            android:layout_margin="@dimen/view_space_8"
+            android:padding="@dimen/view_space_8"
+            android:background="@drawable/shape_analytical_solid"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/touch_view_48"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/stand_answer"
+                    android:textColor="?attr/font_white"
+                    android:textSize="@dimen/font_size_normal" />
+
+                <TextView
+                    android:id="@+id/tv_fragment_stand_answer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/view_space_8"
+                    android:text="@string/empty"
+                    android:textColor="?attr/font_white"
+                    android:textSize="@dimen/font_size_normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/touch_view_48"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/touch_view_48"
+                    android:gravity="center_vertical"
+                    android:text="@string/point"
+                    android:textColor="?attr/font_white"
+                    android:textSize="@dimen/font_size_normal" />
+
+                <TextView
+                    android:id="@+id/tv_fragment_point"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/touch_view_48"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/view_space_8"
+                    android:text="@string/empty"
+                    android:textColor="?attr/font_white"
+                    android:textSize="@dimen/font_size_normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/touch_view_48"
+                    android:gravity="center_vertical"
+                    android:text="@string/question_analytical"
+                    android:textColor="?attr/font_white"
+                    android:textSize="@dimen/font_size_normal" />
+
+                <TextView
+                    android:id="@+id/tv_fragment_analytical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/view_space_8"
+                    android:text="@string/empty"
+                    android:textColor="?attr/font_white"
+                    android:textSize="@dimen/font_size_normal" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

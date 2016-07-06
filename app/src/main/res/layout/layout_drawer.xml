@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:background="?attr/theme_green">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:background="@mipmap/sidebar_background">
+    <LinearLayout
+        android:id="@+id/ll_menu_person"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingBottom="@dimen/margin_space_48"
+        android:paddingLeft="@dimen/margin_space_32">
+
+        <com.ssdut411.app.questionanswer.widget.CircularImage
+            android:id="@+id/iv_head"
+            android:layout_width="@dimen/logo_size_96"
+            android:layout_height="@dimen/logo_size_96"
+            android:src="@mipmap/role_student"/>
+        <TextView
+            android:id="@+id/tv_menu_register_login"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/register_login"
+            android:textSize="@dimen/font_size_title"
+            android:layout_marginLeft="@dimen/margin_space_32"/>
+        <LinearLayout
+            android:id="@+id/ll_menu_info"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/margin_space_16"
+            android:layout_marginBottom="@dimen/margin_space_16"
+            android:gravity="center_vertical">
+            <TextView
+                android:id="@+id/tv_drawer_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="王小明"
+                android:textStyle="bold"
+                android:textSize="@dimen/font_size_title"
+                android:textColor="@color/font_black"/>
+            <TextView
+                android:id="@+id/tv_drawer_class"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/view_space_8"
+                android:text="3年4班"
+                android:textSize="@dimen/font_size_normal"
+                android:textColor="@color/font_gray"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_menu_role"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/touch_view_48"
+            android:background="@drawable/selector_item"
+            android:paddingLeft="@dimen/margin_space_32"
+            android:layout_marginTop="@dimen/view_space_8"
+            android:layout_marginBottom="@dimen/view_space_8"
+            android:layout_gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="@dimen/logo_size_24"
+                android:layout_height="@dimen/logo_size_24"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/sidebar_icon_change" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/touch_view_48"
+                android:gravity="center"
+                android:paddingLeft="@dimen/margin_space__16"
+                android:text="@string/change_role"
+                android:textColor="?attr/font_white"
+                android:textSize="@dimen/font_size_sidebar" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_menu_feedback"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/touch_view_48"
+            android:background="@drawable/selector_item"
+            android:paddingLeft="@dimen/margin_space_32"
+            android:layout_marginTop="@dimen/view_space_8"
+            android:layout_marginBottom="@dimen/view_space_8"
+            android:layout_gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="@dimen/logo_size_24"
+                android:layout_height="@dimen/logo_size_24"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/sidebar_icon_feedback" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/touch_view_48"
+                android:gravity="center"
+                android:paddingLeft="@dimen/margin_space__16"
+                android:text="@string/feedback"
+                android:textColor="?attr/font_white"
+                android:textSize="@dimen/font_size_sidebar" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_menu_about"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/touch_view_48"
+            android:background="@drawable/selector_item"
+            android:paddingLeft="@dimen/margin_space_32"
+            android:layout_marginTop="@dimen/view_space_8"
+            android:layout_marginBottom="@dimen/view_space_8">
+
+            <ImageView
+                android:layout_width="@dimen/logo_size_24"
+                android:layout_height="@dimen/logo_size_24"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/sidebar_icon_about" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/touch_view_48"
+                android:gravity="center"
+                android:paddingLeft="@dimen/margin_space__16"
+                android:text="@string/about_us"
+                android:textColor="?attr/font_white"
+                android:textSize="@dimen/font_size_sidebar" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_menu_clear"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/touch_view_48"
+            android:background="@drawable/selector_item"
+            android:paddingLeft="@dimen/margin_space_32"
+            android:layout_marginTop="@dimen/view_space_8"
+            android:layout_marginBottom="@dimen/view_space_8">
+
+            <ImageView
+                android:layout_width="@dimen/logo_size_24"
+                android:layout_height="@dimen/logo_size_24"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/sidebar_icon_about" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/touch_view_48"
+                android:gravity="center"
+                android:paddingLeft="@dimen/margin_space__16"
+                android:text="@string/clear_cache"
+                android:textColor="?attr/font_white"
+                android:textSize="@dimen/font_size_sidebar" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/margin_space_32">
+        <LinearLayout
+            android:id="@+id/ll_menu_set"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/touch_view_48"
+            android:background="@drawable/selector_item">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/sidebar_icon_set" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/touch_view_48"
+                android:gravity="center"
+                android:paddingLeft="@dimen/view_space_8"
+                android:text="@string/self_set"
+                android:textColor="?attr/font_white"
+                android:textSize="@dimen/font_size_sidebar" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_menu_change"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/touch_view_48"
+            android:background="@drawable/selector_item"
+            android:layout_marginLeft="@dimen/margin_space_16">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/sidebar_icon_theme" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/touch_view_48"
+                android:gravity="center"
+                android:paddingLeft="@dimen/view_space_8"
+                android:text="@string/change_theme"
+                android:textColor="?attr/font_white"
+                android:textSize="@dimen/font_size_sidebar" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout></LinearLayout>

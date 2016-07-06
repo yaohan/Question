@@ -1,0 +1,19 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <!-- 内容界面 -->
+        <include layout="@layout/layout_main_teacher"/>
+        <!-- 侧滑界面 -->
+        <include layout="@layout/layout_drawer"/>
+
+    </android.support.v4.widget.DrawerLayout>
+
+</LinearLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/background_white"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_toolbar" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <com.ssdut411.app.questionanswer.widget.ViewPagerIndicator
+            android:id="@+id/id_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="?attr/colorPrimary"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/evaluation_situation"
+                android:textColor="?attr/font_white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/topic_detail"
+                android:textColor="?attr/font_gray"
+                android:textSize="16sp" />
+        </com.ssdut411.app.questionanswer.widget.ViewPagerIndicator>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/margin_space_16"
+            android:background="?attr/background_white"
+            android:layout_below="@+id/id_indicator"/>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_report_card_viewpager"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/background_white"
+            android:layout_below="@+id/divider"/>
+
+        <LinearLayout
+            android:id="@+id/commond"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/touch_view_48"
+            android:background="?attr/theme_green"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:padding="@dimen/view_space_4"
+            android:visibility="gone">
+            <EditText
+                android:id="@+id/et_commond"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="fill_parent"
+                android:background="@color/font_white"
+                android:paddingLeft="@dimen/view_space_4"
+                android:hint="请输入评价"
+                android:textColor="@color/font_black"
+                android:layout_marginRight="@dimen/view_space_8"/>
+            <TextView
+                android:id="@+id/bt_commond"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="确定"
+                android:padding="@dimen/view_space_8"
+                android:background="@color/font_white"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

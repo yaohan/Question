@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/theme_green"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_toolbar" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@mipmap/register_background">
+
+        <LinearLayout
+            android:id="@+id/ll_register_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_register"
+            android:layout_margin="@dimen/margin_space_48"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/touch_view_48"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="@dimen/login_width"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="@string/phone_number"
+                    android:textColor="?attr/font_gray"
+                    android:textSize="@dimen/font_size_normal" />
+
+                <EditText
+                    android:id="@+id/et_register_count"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/shape_register_first"
+                    android:hint="@string/please_input_phone_number"
+                    android:paddingLeft="@dimen/view_space_8"
+                    android:textColor="?attr/font_black"
+                    android:textSize="@dimen/font_size_normal" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="?attr/divide_gray" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/touch_view_48">
+
+                <TextView
+                    android:layout_width="@dimen/login_width"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="@string/check_code"
+                    android:textColor="?attr/font_gray"
+                    android:textSize="@dimen/font_size_normal" />
+
+                <EditText
+                    android:id="@+id/et_register_check"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="?attr/background_white"
+                    android:hint="@string/please_input_check_code"
+                    android:paddingLeft="@dimen/view_space_8"
+                    android:textColor="?attr/font_black"
+                    android:textSize="@dimen/font_size_normal" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="?attr/divide_gray" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/touch_view_48">
+
+                <TextView
+                    android:layout_width="@dimen/login_width"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="@string/password"
+                    android:textColor="?attr/font_gray"
+                    android:textSize="@dimen/font_size_normal" />
+
+                <EditText
+                    android:id="@+id/et_register_password"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="?attr/background_white"
+                    android:hint="@string/please_input_password"
+                    android:paddingLeft="@dimen/view_space_8"
+                    android:textColor="?attr/font_black"
+                    android:textSize="@dimen/font_size_normal"
+                    android:inputType="textPassword" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="?attr/divide_gray" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/touch_view_48">
+
+                <TextView
+                    android:layout_width="@dimen/login_width"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="@string/confirm_password"
+                    android:textColor="?attr/font_gray"
+                    android:textSize="@dimen/font_size_normal" />
+
+                <EditText
+                    android:id="@+id/et_register_password2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/shape_register_last"
+                    android:hint="@string/please_input_password_again"
+                    android:paddingLeft="@dimen/view_space_8"
+                    android:textColor="?attr/font_black"
+                    android:textSize="@dimen/font_size_normal"
+                    android:inputType="textPassword" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_register_sure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_register_layout"
+            android:src="@mipmap/register_sure"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/margin_space__16"
+        android:layout_weight="1"
+        android:background="?attr/theme_green"
+        android:gravity="center_horizontal">
+
+    </LinearLayout>
+</LinearLayout>

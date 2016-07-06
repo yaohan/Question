@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="?attr/background_white">
+
+    <include layout="@layout/layout_toolbar" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/view_space_8" />
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="144dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:id="@+id/rl_select_random"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/touch_view_48"
+                android:background="@drawable/shape_listview_item">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/margin_space__16"
+                    android:textColor="?attr/font_black"
+                    android:textSize="@dimen/font_size_normal"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/select_random"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rl_select_error"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/touch_view_48"
+                android:background="@drawable/shape_listview_item">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/margin_space__16"
+                    android:textColor="?attr/font_black"
+                    android:textSize="@dimen/font_size_normal"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/select_error"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_select_point"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/touch_view_48"
+                android:background="@drawable/shape_listview_item">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/margin_space__16"
+                    android:textColor="?attr/font_black"
+                    android:textSize="@dimen/font_size_normal"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/select_point"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/rg_select"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent">
+            <RadioButton
+                android:id="@+id/rb_select_random"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/touch_view_48"
+                android:checked="true"
+                android:clickable="false"
+                android:focusable="false"
+                android:layout_marginLeft="@dimen/margin_space__16"/>
+            <RadioButton
+                android:id="@+id/rb_select_error"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/touch_view_48"
+                android:checked="false"
+                android:clickable="false"
+                android:focusable="false"
+                android:layout_marginLeft="@dimen/margin_space__16"/>
+            <RadioButton
+                android:id="@+id/rb_select_point"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/touch_view_48"
+                android:checked="false"
+                android:clickable="false"
+                android:focusable="false"
+                android:layout_marginLeft="@dimen/margin_space__16"/>
+        </RadioGroup>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <ListView
+            android:id="@+id/lv_second_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="@dimen/view_space_0"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+</LinearLayout>

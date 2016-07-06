@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/touch_head_40"
+    android:minHeight="@dimen/touch_head_40"
+    android:orientation="horizontal"
+    android:gravity="center_vertical">
+    <View
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="fill_parent"/>
+        <TextView
+            android:id="@+id/item_center"
+            android:layout_width="0dp"
+            android:layout_weight="6"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/margin_space__16"
+            android:textColor="?attr/font_black"
+            android:textSize="@dimen/font_size_normal"
+            android:singleLine="true"/>
+</LinearLayout>

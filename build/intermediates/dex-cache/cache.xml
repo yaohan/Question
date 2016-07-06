@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="D:\Android\Project\QuestionAnswer\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="5c5699834e9722f1c288fea2de82725d078ba127">
+        <dex dex="D:\Android\Project\QuestionAnswer\app\build\intermediates\pre-dexed\debug\classes-fd217e1a8f38c0ab21fa0a21896f3fd5888a84ed.jar" />
+    </item>
+    <item
+        jar="D:\Android\SDK\extras\android\m2repository\com\android\support\support-annotations\23.1.1\support-annotations-23.1.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
+        <dex dex="D:\Android\Project\QuestionAnswer\app\build\intermediates\pre-dexed\debug\support-annotations-23.1.1-3af62365efa68590026d6e6d134363a491168d36.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\QuestionAnswer\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\libs\internal_impl-23.1.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
+        <dex dex="D:\Android\Project\QuestionAnswer\app\build\intermediates\pre-dexed\debug\internal_impl-23.1.1-c4dbe8a8bbbad4f6493addc2c09a6aeea1ad8dbf.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\QuestionAnswer\app\libs\Volley.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="2dd908289a096a92b5f266cefb6c1bda32762cef">
+        <dex dex="D:\Android\Project\QuestionAnswer\app\build\intermediates\pre-dexed\debug\Volley-21a266a1a89758f09f06553d957915c45c00b0d8.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\QuestionAnswer\app\libs\gson-2.2.4.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="a60a5e993c98c864010053cb901b7eab25306568">
+        <dex dex="D:\Android\Project\QuestionAnswer\app\build\intermediates\pre-dexed\debug\gson-2.2.4-5ed222408353cd32e46654cc1d61cc776d7f96f4.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\QuestionAnswer\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
+        <dex dex="D:\Android\Project\QuestionAnswer\app\build\intermediates\pre-dexed\debug\classes-594ea21cac4dfd6d41ea33069ecfacb061201896.jar" />
+    </item>
+
+</items>

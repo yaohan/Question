@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="?attr/background_white">
+
+    <include layout="@layout/layout_toolbar" />
+
+    <GridView
+        android:id="@+id/gv_answer_gridview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:numColumns="5"
+        android:padding="@dimen/margin_space__16"
+        android:verticalSpacing="@dimen/margin_space__16"
+        android:listSelector="@android:color/transparent"/>
+</LinearLayout>

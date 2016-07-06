@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/layout_toolbar"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/margin_space_32"
+        android:gravity="center"
+        android:layout_margin="@dimen/view_space_8"
+        android:background="@color/background_gray">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_search"/>
+        <EditText
+            android:id="@+id/et_search_name"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/background_gray"
+            android:hint="请输入姓名进行搜索"
+            android:textColor="@color/font_black"/>
+
+        <TextView
+            android:id="@+id/tv_search_search"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@color/font_red"
+            android:paddingLeft="@dimen/view_space_8"
+            android:paddingRight="@dimen/view_space_8"
+            android:gravity="center"
+            android:text="搜索"
+            android:textColor="@color/font_white"
+            android:textSize="@dimen/font_size_menu" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_search_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_gray">
+
+    <include layout="@layout/layout_toolbar" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:id="@+id/tv_set_change_pwd"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/touch_view_48"
+                android:background="@color/background_white"
+                android:gravity="center"
+                android:text="修改密码"
+                android:textColor="@color/font_black"
+                android:textSize="@dimen/font_size_menu" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_set_logout"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/touch_view_48"
+            android:layout_alignParentBottom="true"
+            android:background="?attr/theme_green"
+            android:gravity="center"
+            android:text="退出登录"
+            android:textColor="@color/font_white"
+            android:textSize="@dimen/font_size_menu" />
+    </RelativeLayout>
+
+</LinearLayout>

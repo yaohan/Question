@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/touch_view_48"
+    android:background="?attr/background_white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/margin_space_16"
+    android:paddingRight="@dimen/margin_space_16">
+
+    <ImageView
+        android:id="@+id/iv_report_item_image"
+        android:layout_width="@dimen/touch_icon_24"
+        android:layout_height="@dimen/touch_icon_24"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tv_report_item_role"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:text="@string/teacher"
+        android:textColor="?attr/font_black"
+        android:textSize="@dimen/font_size_normal"
+        android:paddingLeft="@dimen/view_space_8"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:text="@string/colon"
+        android:textColor="?attr/font_black"
+        android:textSize="@dimen/font_size_normal" />
+    <TextView
+        android:id="@+id/tv_report_item_evaluation"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:text="@string/empty"
+        android:textColor="?attr/font_black"
+        android:textSize="@dimen/font_size_normal" />
+</LinearLayout>

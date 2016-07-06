@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/background_white"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_toolbar" />
+
+
+    <RelativeLayout
+        android:id="@+id/ll_question_test"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@mipmap/question_background">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_question_viewpager"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+
+        <RelativeLayout
+            android:id="@+id/rl_operation"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@mipmap/bottom_box">
+
+            <ImageView
+                android:id="@+id/iv_question_collection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/view_space_8"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_space_16"
+                android:src="@mipmap/icon_question_uncollection" />
+            <TextView
+                android:id="@+id/tv_question_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:textSize="@dimen/font_size_menu"
+                android:textColor="?attr/font_gray"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_question_operation"
+            android:layout_width="@dimen/touch_view_48"
+            android:layout_height="@dimen/touch_view_48"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/margin_space_32"
+            android:layout_marginRight="@dimen/margin_space_32"
+            android:background="@drawable/shape_question_button"
+            android:gravity="center"
+            android:lineSpacingExtra="4dp"
+            android:padding="@dimen/view_space_8"
+            android:text="@string/assigment"
+            android:textColor="?attr/font_white"
+            android:textSize="@dimen/font_size_normal" />
+    </RelativeLayout>
+
+
+</LinearLayout>

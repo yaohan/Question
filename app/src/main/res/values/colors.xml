@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4CAF50</color>
+    <color name="colorPrimaryDark">#388E3C</color>
+    <color name="accentColor">#FF4081</color>
+
+    <color name="theme_green">#33CC99</color>
+    <color name="theme_night">#263238</color>
+    <color name="theme_night_pressed">#162228</color>
+    <color name="title_pressed">#33CC00</color>
+    <color name="item_pressed">#1EBB8B</color>
+
+    <color name="background_white">#FFFFFF</color>
+    <color name="background_night">#37474F</color>
+    <color name="background_gray">#F3F2F6</color>
+    <color name="divide_gray">#E5E5E5</color>
+    <color name="item_white_pressed">#CCCCCC</color>
+
+    <color name="item_homework_blue">#66CCEE</color>
+    <color name="item_homework_blue_pressed">#44AACC</color>
+    <color name="font_white">#FFFFFF</color>
+    <color name="font_night">#969C9E</color>
+    <color name="font_black">#000000</color>
+    <color name="font_green">#33CC99</color>
+    <color name="font_gray">#999999</color>
+    <color name="font_red">#E46D6D</color>
+    <color name="question_true">#AAEECC</color>
+    <color name="question_false">#FF8888</color>
+    <color name="question_unfinished">#FFF200</color>
+    <color name="transparent_background">#DD383838</color>
+</resources>

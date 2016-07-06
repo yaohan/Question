@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/layout_toolbar"/>
+    <EditText
+        android:id="@+id/et_feedback"
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:background="?attr/divide_gray"
+        android:layout_margin="@dimen/view_space_8"
+        android:hint="请输入您的建议，不超过500字"
+        android:padding="@dimen/margin_space_16"
+        android:gravity="top"
+        android:textColor="?attr/font_black"/>
+</LinearLayout>

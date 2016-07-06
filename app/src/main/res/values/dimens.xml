@@ -1,0 +1,43 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <dimen name="touch_head_40">40dp</dimen>
+    <dimen name="touch_icon_24">24dp</dimen>
+    <dimen name="touch_view_48">48dp</dimen>
+    <dimen name="touch_view_64">64dp</dimen>
+    <dimen name="touch_view_96">96dp</dimen>
+
+    <dimen name="view_space_0">0dp</dimen>
+    <dimen name="view_space_4">4dp</dimen>
+    <dimen name="view_space_8">8dp</dimen>
+    <dimen name="margin_space_16">16dp</dimen>
+    <dimen name="margin_space__16">16dp</dimen>
+    <dimen name="margin_space_32">32dp</dimen>
+    <dimen name="margin_space_48">48dp</dimen>
+    <dimen name="margin_content_72">72dp</dimen>
+
+    <dimen name="font_size_title">20sp</dimen>
+    <dimen name="font_size_sidebar">18sp</dimen>
+    <dimen name="font_size_menu">16sp</dimen>
+    <dimen name="font_size_normal">14sp</dimen>
+
+    <!-- logo大小 -->
+    <dimen name="logo_size_24">24dp</dimen>
+    <dimen name="logo_size_48">48dp</dimen>
+    <dimen name="logo_size_72">72dp</dimen>
+    <dimen name="logo_size_96">96dp</dimen>
+    <dimen name="logo_size_144">144dp</dimen>
+
+    <dimen name="toolbar_height">56dp</dimen>
+
+    <dimen name="login_width">64dp</dimen>
+
+    <dimen name="radius_2">2dp</dimen>
+    <dimen name="radius_4">4dp</dimen>
+    <dimen name="radius_16">16dp</dimen>
+    <dimen name="radius_32">32dp</dimen>
+
+
+    <dimen name="divide_height">1dp</dimen>
+    <dimen name="dialog_width">320dp</dimen>
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/layout_toolbar"/>
+    <RelativeLayout
+        android:id="@+id/rl_school_search"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/touch_view_48"
+        android:visibility="gone">
+        <ImageView
+            android:layout_height="@dimen/touch_head_40"
+            android:layout_width="@dimen/touch_head_40"
+            android:src="@mipmap/ic_search_light"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:hint="搜索"
+            android:paddingLeft="@dimen/margin_space_48"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="?attr/theme_green"
+            android:padding="@dimen/view_space_4"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/view_space_8"
+            android:text="搜索"/>
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/lv_school_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+</LinearLayout>

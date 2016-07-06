@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/layout_toolbar"/>
+    <LinearLayout
+        android:id="@+id/ll_school"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_add_province"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/touch_view_48"
+        android:paddingLeft="@dimen/margin_space_16"
+        android:paddingRight="@dimen/margin_space_16">
+
+        <TextView
+            android:id="@+id/tv_add_province"
+            android:layout_width="@dimen/margin_content_72"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="省"
+            android:textColor="?attr/font_black"
+            android:textSize="@dimen/font_size_normal" />
+
+        <EditText
+            android:id="@+id/et_add_province"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/margin_content_72"
+            android:layout_toRightOf="@+id/tv_add_province"
+            android:selectAllOnFocus="true"
+            android:text="@string/empty"
+            android:textColor="?attr/font_black"
+            android:textSize="@dimen/font_size_normal" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_add_city"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/touch_view_48"
+        android:paddingLeft="@dimen/margin_space_16"
+        android:paddingRight="@dimen/margin_space_16">
+
+        <TextView
+            android:id="@+id/tv_add_city"
+            android:layout_width="@dimen/margin_content_72"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="市"
+            android:textColor="?attr/font_black"
+            android:textSize="@dimen/font_size_normal" />
+
+        <EditText
+            android:id="@+id/et_add_city"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/margin_content_72"
+            android:layout_toRightOf="@+id/tv_add_city"
+            android:selectAllOnFocus="true"
+            android:text="@string/empty"
+            android:textColor="?attr/font_black"
+            android:textSize="@dimen/font_size_normal" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_add_area"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/touch_view_48"
+        android:paddingLeft="@dimen/margin_space_16"
+        android:paddingRight="@dimen/margin_space_16">
+
+        <TextView
+            android:id="@+id/tv_add_area"
+            android:layout_width="@dimen/margin_content_72"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="区"
+            android:textColor="?attr/font_black"
+            android:textSize="@dimen/font_size_normal" />
+
+        <EditText
+            android:id="@+id/et_add_area"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/margin_content_72"
+            android:layout_toRightOf="@+id/tv_add_area"
+            android:selectAllOnFocus="true"
+            android:text="@string/empty"
+            android:textColor="?attr/font_black"
+            android:textSize="@dimen/font_size_normal" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_add_school"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/touch_view_48"
+        android:paddingLeft="@dimen/margin_space_16"
+        android:paddingRight="@dimen/margin_space_16">
+
+        <TextView
+            android:id="@+id/tv_add_school"
+            android:layout_width="@dimen/margin_content_72"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="学校"
+            android:textColor="?attr/font_black"
+            android:textSize="@dimen/font_size_normal" />
+
+        <EditText
+            android:id="@+id/et_add_school"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/margin_content_72"
+            android:layout_toRightOf="@+id/tv_add_school"
+            android:selectAllOnFocus="true"
+            android:text="@string/empty"
+            android:textColor="?attr/font_black"
+            android:textSize="@dimen/font_size_normal" />
+    </RelativeLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_class"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_add_grade"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/touch_view_48"
+            android:paddingLeft="@dimen/margin_space_16"
+            android:paddingRight="@dimen/margin_space_16">
+
+            <TextView
+                android:id="@+id/tv_add_grade"
+                android:layout_width="@dimen/margin_content_72"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="年级"
+                android:textColor="?attr/font_black"
+                android:textSize="@dimen/font_size_normal" />
+
+            <EditText
+                android:id="@+id/et_add_grade"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="@dimen/margin_content_72"
+                android:layout_toRightOf="@+id/tv_add_grade"
+                android:selectAllOnFocus="true"
+                android:text="@string/empty"
+                android:textColor="?attr/font_black"
+                android:textSize="@dimen/font_size_normal" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_add_class"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/touch_view_48"
+            android:paddingLeft="@dimen/margin_space_16"
+            android:paddingRight="@dimen/margin_space_16">
+
+            <TextView
+                android:id="@+id/tv_add_class"
+                android:layout_width="@dimen/margin_content_72"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="班级"
+                android:textColor="?attr/font_black"
+                android:textSize="@dimen/font_size_normal" />
+
+            <EditText
+                android:id="@+id/et_add_class"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="@dimen/margin_content_72"
+                android:layout_toRightOf="@+id/tv_add_class"
+                android:selectAllOnFocus="true"
+                android:text="@string/empty"
+                android:textColor="?attr/font_black"
+                android:textSize="@dimen/font_size_normal" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>
